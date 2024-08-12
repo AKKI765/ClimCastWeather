@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>ClimCastWeather: Get Weather Information Around The World</title>
+</head>
+<body>
+
+    <div class="mainContainer">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo">
+                <h1>ClimCastWeather</h1>
+            </div>
+            <div class="about">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <header>
+                    <div class="menu-btn" id="menuBtn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+                </header>
+            
+                <nav class="nav-menu" id="navMenu">
+                    <div class="close-btn" id="closeBtn">&times;</div>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- Weather Container -->
+         <div class="weatherContainer">
+
+            <div class="weather">
+
+                <div class="searchCity">
+                    <img src="images/location.svg" alt="location">
+                    <input type="text" placeholder="Enter City Name" id="city_Name">
+                    <button type="button"><img src="images/search.svg" alt="search"></button>
+                </div>
+
+                <div class="weatherImg">
+                    <img class="condition" src="images/weather.png" alt="weather">
+                </div>
+
+                <div id="description">
+                    <p class="description"></p>
+                    
+                </div>
+
+                <div class="temp">
+                    <p class="temperature">-- °C</p>
+                    <!-- <img src="images/celcius.svg" alt="celcius"> -->
+                </div>
+
+                <div class="cityName">
+                    <p>Patna</p>
+                </div>
+
+                <div class="weatherMore">
+                    <div class="humidity">
+                        <img src="images/humidity.svg" alt="humidity">
+                        <div class="humidityDetail">
+                            <h3 class="humid">00%</h3>
+                            <h3>Humidity</h3>
+                        </div>
+                        
+                    </div>
+
+                    <div class="windspeed">
+                        <img src="images/windspeed.svg" alt="windspeed">
+                        <div class="windspeedDetail">
+                            <h3 class="speed">00 Km/h</h3>
+                            <h3>Windspeed</h3>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+         </div>
+
+
+         <!-- Forecast  -->
+
+         <div id="weather-container" class="weather-container">
+
+         </div>
+
+
+         <div class="footer">
+            <p>&#169; Atul Kumar</p>
+         </div>
+
+         
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
